@@ -1,0 +1,242 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #626d71;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+
+}
+
+.logo1{
+    width: 35px;
+    height: 35px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.logo2{
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.follow {
+    margin-right: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: #b38867;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #003b46;
+    transform: rotate(2deg);
+
+}
+
+
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    transition: all 0.5s ease 0s;
+    display: inline-block;
+
+}
+
+li a:hover {
+    color: #003b46;
+    transform: rotate(2deg);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.discription {
+    font-size: 20px;
+    font-weight: bolder;
+
+
+}
+
+.foto {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.nopal {
+    background-image: url(assets/foto/minions.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #626d71;
+    color: white;
+    padding: 20px;
+    gap: 10px;
+}
+
+.aji{
+    margin-top: 5px;
+}
+
+
+
+.follow2 {
+    border: none;
+    background-color: #b38867;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 8px;
+}
+
+.card-item{
+    text-align: center;
+    width: 20%;
+    background-color: grey;
+    color: wheat;
+    padding: 25px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+}
+
+.card-title{
+    
+font-size: 20px;
+font-weight: bolder;
+}
+
+.card-description{
+font-size: 10px;
+margin-top: 4px;
+
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #cdcdc0;
+    color: white;
+
+}
+
+@media screen and (max-width:500px){
+    .card{
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro{
+        margin-top: 20px;
+     
+    }
+
+  .foto{
+    padding: 0;
+    border-radius: 0;
+  }
+
+  nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#626d71;
+    z-index: 9;
+    
+  }
+
+  footer{
+    margin-bottom: 70px;
+  }
+}
